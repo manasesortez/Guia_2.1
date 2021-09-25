@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="calculator" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimaryDark">#0E284D</item>
+        <item name="colorPrimary">#2264c0</item>
+
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="calculator2" parent="Theme.Design.NoActionBar">
+        <item name="colorPrimaryDark">#0E284D</item>
+    </style>
+</resources>
