@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/seguisb"
-        android:text="Haz Click en el Ejercicio que Quiere ver"
+        android:text="Haz Click Lenguajes de Programacion"
         android:textColor="#fff"
         android:textSize="30px"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -40,10 +40,11 @@
         tools:ignore="HardcodedText,MissingConstraints,PxUsage" />
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
         android:layout_marginTop="300px"
+        android:layout_weight="3"
         android:background="@drawable/card_background"
         android:elevation="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -53,379 +54,28 @@
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints,PxUsage,UnusedAttribute">
 
-        <ScrollView
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvProgram"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_height="560dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="UselessLeaf,UselessParent">
+            tools:ignore="MissingConstraints,NotSibling,ObsoleteLayoutParam" />
 
-            <LinearLayout
-
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="ScrollViewSize,UselessLeaf">
-
-                <GridLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:alignmentMode="alignMargins"
-                    android:columnCount="2"
-                    android:columnOrderPreserved="false"
-                    android:rowCount="3">
-
-                    <androidx.cardview.widget.CardView
-                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                        android:id="@+id/cv_notificacion"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="35dp"
-                        android:layout_marginTop="15dp"
-                        android:clickable="true"
-                        card_view:cardBackgroundColor="#F4F4F4"
-                        card_view:cardCornerRadius="10dp"
-                        tools:ignore="KeyboardInaccessibleWidget,RtlHardcoded">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            tools:ignore="ExtraText">
-
-                            <TextView
-                                android:layout_width=" wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginEnd="8dp"
-                                android:fontFamily="@font/seguisb"
-                                android:text="Notificacion"
-                                android:textColor="#334956"
-                                android:textSize="16sp"
-                                card_view:layout_constraintBottom_toBottomOf="parent"
-                                card_view:layout_constraintEnd_toEndOf="parent"
-                                card_view:layout_constraintStart_toStartOf="parent"
-                                tools:ignore="HardcodedText,MissingConstraints,MissingPrefix" />
-
-                            <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginTop="8dp"
-                                android:layout_marginEnd="8dp"
-                                android:layout_marginBottom="44dp"
-                                android:src="@drawable/ic_notification"
-                                card_view:layout_constraintBottom_toBottomOf="parent"
-                                card_view:layout_constraintEnd_toEndOf="parent"
-                                card_view:layout_constraintStart_toStartOf="parent"
-                                tools:ignore="ContentDescription" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                        android:id="@+id/cv_informacion"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="40dp"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginRight="50dp"
-                        android:clickable="true"
-                        card_view:cardBackgroundColor="#F4F4F4"
-                        card_view:cardCornerRadius="10dp"
-                        tools:ignore="KeyboardInaccessibleWidget,RtlHardcoded">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            tools:ignore="ExtraText">
-
-                            <TextView
-                                android:layout_width=" wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginEnd="8dp"
-                                android:fontFamily="@font/seguisb"
-                                android:text="Informacion"
-                                android:textColor="#334956"
-                                android:textSize="16sp"
-                                card_view:layout_constraintBottom_toBottomOf="parent"
-                                card_view:layout_constraintEnd_toEndOf="parent"
-                                card_view:layout_constraintStart_toStartOf="parent"
-                                tools:ignore="HardcodedText,MissingConstraints,MissingPrefix" />
-
-                            <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginTop="8dp"
-                                android:layout_marginEnd="8dp"
-                                android:layout_marginBottom="44dp"
-                                android:src="@drawable/ic_personal_information"
-                                card_view:layout_constraintBottom_toBottomOf="parent"
-                                card_view:layout_constraintEnd_toEndOf="parent"
-                                card_view:layout_constraintStart_toStartOf="parent"
-                                tools:ignore="ContentDescription" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                        android:id="@+id/cv_calculadora"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="35dp"
-                        android:layout_marginTop="50dp"
-                        android:layout_marginBottom="50dp"
-                        android:clickable="true"
-                        card_view:cardBackgroundColor="#F4F4F4"
-                        card_view:cardCornerRadius="10dp"
-                        tools:ignore="KeyboardInaccessibleWidget,RtlHardcoded">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            tools:ignore="ExtraText">
-
-                            <TextView
-                                android:layout_width=" wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginEnd="8dp"
-                                android:fontFamily="@font/seguisb"
-                                android:text="Calculadora"
-                                android:textColor="#334956"
-                                android:textSize="16sp"
-                                card_view:layout_constraintBottom_toBottomOf="parent"
-                                card_view:layout_constraintEnd_toEndOf="parent"
-                                card_view:layout_constraintStart_toStartOf="parent"
-                                tools:ignore="HardcodedText,MissingConstraints,MissingPrefix" />
-
-                            <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginEnd="8dp"
-                                android:layout_marginBottom="44dp"
-                                android:src="@drawable/ic_calculator"
-                                card_view:layout_constraintBottom_toBottomOf="parent"
-                                card_view:layout_constraintEnd_toEndOf="parent"
-                                card_view:layout_constraintStart_toStartOf="parent"
-                                tools:ignore="ContentDescription" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                        android:id="@+id/cv_temperatura"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="40dp"
-                        android:layout_marginTop="50dp"
-                        android:layout_marginRight="50dp"
-                        android:layout_marginBottom="50dp"
-                        android:clickable="true"
-                        card_view:cardBackgroundColor="#F4F4F4"
-                        card_view:cardCornerRadius="10dp"
-                        tools:ignore="KeyboardInaccessibleWidget,RtlHardcoded">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            tools:ignore="ExtraText">
-
-                            <TextView
-                                android:layout_width=" wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginEnd="8dp"
-                                android:fontFamily="@font/seguisb"
-                                android:text="Temperatura"
-                                android:textColor="#334956"
-                                android:textSize="16sp"
-                                card_view:layout_constraintBottom_toBottomOf="parent"
-                                card_view:layout_constraintEnd_toEndOf="parent"
-                                card_view:layout_constraintStart_toStartOf="parent"
-                                tools:ignore="HardcodedText,MissingConstraints,MissingPrefix" />
-
-                            <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginTop="8dp"
-                                android:layout_marginEnd="8dp"
-                                android:layout_marginBottom="44dp"
-                                android:src="@drawable/ic_centigrade"
-                                card_view:layout_constraintBottom_toBottomOf="parent"
-                                card_view:layout_constraintEnd_toEndOf="parent"
-                                card_view:layout_constraintStart_toStartOf="parent"
-                                tools:ignore="ContentDescription" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                        android:id="@+id/cv_numero_mayor"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="35dp"
-                        android:layout_marginTop="15dp"
-                        android:clickable="true"
-                        card_view:cardBackgroundColor="#F4F4F4"
-                        card_view:cardCornerRadius="10dp"
-                        tools:ignore="KeyboardInaccessibleWidget,RtlHardcoded">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            tools:ignore="ExtraText">
-
-                            <TextView
-                                android:layout_width=" wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginEnd="8dp"
-                                android:fontFamily="@font/seguisb"
-                                android:text="Numero Mayor"
-                                android:textColor="#334956"
-                                android:textSize="16sp"
-                                card_view:layout_constraintBottom_toBottomOf="parent"
-                                card_view:layout_constraintEnd_toEndOf="parent"
-                                card_view:layout_constraintStart_toStartOf="parent"
-                                tools:ignore="HardcodedText,MissingConstraints,MissingPrefix" />
-
-                            <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginTop="8dp"
-                                android:layout_marginEnd="8dp"
-                                android:layout_marginBottom="44dp"
-                                android:src="@drawable/ic_cubes"
-                                card_view:layout_constraintBottom_toBottomOf="parent"
-                                card_view:layout_constraintEnd_toEndOf="parent"
-                                card_view:layout_constraintStart_toStartOf="parent"
-                                tools:ignore="ContentDescription" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                        android:id="@+id/cv_acelerometro"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="40dp"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginRight="50dp"
-                        android:clickable="true"
-                        card_view:cardBackgroundColor="#F4F4F4"
-                        card_view:cardCornerRadius="10dp"
-                        tools:ignore="KeyboardInaccessibleWidget,RtlHardcoded">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            tools:ignore="ExtraText">
-
-                            <TextView
-                                android:layout_width=" wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginEnd="8dp"
-                                android:fontFamily="@font/seguisb"
-                                android:text="Acelerometro"
-                                android:textColor="#334956"
-                                android:textSize="16sp"
-                                card_view:layout_constraintBottom_toBottomOf="parent"
-                                card_view:layout_constraintEnd_toEndOf="parent"
-                                card_view:layout_constraintStart_toStartOf="parent"
-                                tools:ignore="HardcodedText,MissingConstraints,MissingPrefix" />
-
-                            <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginTop="8dp"
-                                android:layout_marginEnd="8dp"
-                                android:layout_marginBottom="44dp"
-                                android:src="@drawable/ic_speedometer"
-                                card_view:layout_constraintBottom_toBottomOf="parent"
-                                card_view:layout_constraintEnd_toEndOf="parent"
-                                card_view:layout_constraintStart_toStartOf="parent"
-                                tools:ignore="ContentDescription" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                        android:id="@+id/cv_luminosidad"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="35dp"
-                        android:layout_marginTop="50dp"
-                        android:layout_marginBottom="50dp"
-                        android:clickable="true"
-                        card_view:cardBackgroundColor="#F4F4F4"
-                        card_view:cardCornerRadius="10dp"
-                        tools:ignore="KeyboardInaccessibleWidget,RtlHardcoded">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            tools:ignore="ExtraText">
-
-                            <TextView
-                                android:layout_width=" wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginEnd="8dp"
-                                android:fontFamily="@font/seguisb"
-                                android:text="Luminosidad"
-                                android:textColor="#334956"
-                                android:textSize="16sp"
-                                card_view:layout_constraintBottom_toBottomOf="parent"
-                                card_view:layout_constraintEnd_toEndOf="parent"
-                                card_view:layout_constraintStart_toStartOf="parent"
-                                tools:ignore="HardcodedText,MissingConstraints,MissingPrefix" />
-
-                            <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:layout_marginStart="8dp"
-                                android:layout_marginEnd="8dp"
-                                android:layout_marginBottom="44dp"
-                                android:src="@drawable/ic_idea"
-                                card_view:layout_constraintBottom_toBottomOf="parent"
-                                card_view:layout_constraintEnd_toEndOf="parent"
-                                card_view:layout_constraintStart_toStartOf="parent"
-                                tools:ignore="ContentDescription" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                </GridLayout>
-
-            </LinearLayout>
-        </ScrollView>
 
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

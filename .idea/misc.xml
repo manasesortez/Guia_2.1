@@ -11,8 +11,10 @@
         <entry key="app/src/main/res/drawable/ic_baseline_check_24.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_calculator.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_centigrade.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_coding.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_cubes.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_launcher_popcorn.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/icon_calculator.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/spinner.xml" value="0.1685185185185185" />
         <entry key="app/src/main/res/layout/activity_acelerometro.xml" value="0.17395833333333333" />
@@ -24,6 +26,7 @@
         <entry key="app/src/main/res/layout/activity_notificacion.xml" value="0.17395833333333333" />
         <entry key="app/src/main/res/layout/activity_number_mayor.xml" value="0.1506849315068493" />
         <entry key="app/src/main/res/layout/activity_temperatura.xml" value="0.17395833333333333" />
+        <entry key="app/src/main/res/layout/single_item.xml" value="0.335" />
         <entry key="app/src/main/res/layout/spinner_iteam.xml" value="0.1" />
         <entry key="app/src/main/res/layout/splash_screen.xml" value="0.1" />
         <entry key="app/src/main/res/layout/toast_info.xml" value="0.17391304347826086" />
@@ -42,7 +45,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.20230263157894737" />
+        <option name="scale" value="0.1" />
       </ProjectState>
     </option>
   </component>
